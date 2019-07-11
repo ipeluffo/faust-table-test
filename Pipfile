@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+faust = {extras = ["debug"],version = "==1.7.1"}
+ipdb = "*"
+objgraph = "*"
+
+[packages]
+faust = {extras = ["fast", "rocksdb", "uvloop"],version = "==1.7.1"}
+
+[requires]
+python_version = "3.7"
